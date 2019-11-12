@@ -1,0 +1,15 @@
+def getGuessedWord(secretWord, lettersGuessed):
+
+    isGuessed = secretWord
+
+    for x in isGuessed:
+
+        if x in lettersGuessed:
+
+            continue
+
+        else:
+
+            isGuessed = isGuessed.replace(x, "_")
+
+    return isGuessed
